@@ -4,7 +4,7 @@ import './css/taskmodal.css'
 function TaskModal({ onClose, onAddTask, task, }) {
   const [taskData, setTaskData] = useState({
     taskName: '',
-    taskDuration: { hours: 0, minutes: 0, seconds: 0 },
+    taskDuration: { hours: '', minutes: '', seconds: '' },
     dueDate: '',
     priority: 'Low',
   });

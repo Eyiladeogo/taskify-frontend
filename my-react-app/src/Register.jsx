@@ -36,7 +36,10 @@ function Register(){
             console.log(response.data);
             setErrorExists(false)
             localStorage.setItem('token', response.data);
-            navigate('/tasks'); 
+            // Slight delay to ensure token is set before navigation
+            setTimeout(() => {
+            navigate('/tasks');
+      }, 100); // 100ms delay
         } catch (error) {
             setErrorExists(true)
           console.error('Login failed:', error);

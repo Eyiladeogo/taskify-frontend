@@ -81,6 +81,7 @@ useEffect(() => {
 
 
     async function fetchTasks(endpoint){
+        
         try {
             const response = await api.get(endpoint);
         // const data = await response.json();
@@ -199,7 +200,7 @@ useEffect(() => {
             
                 {tasks.map((task)=><TaskDetail key={task.task_id} task={task} onDelete={handleDeleteTask} onEdit={toggleModal} onComplete={handleCompleteTask} onFetchTask={fetchTasks} setCurrentTask={setCurrentTask} showCompleted={showCompleted}/> )}
             </div>
-            </>: <p>Add a New Task</p>}
+            </>: <p style={{fontSize:"3.5em", textAlign:"center",color:"#ff6347", marginTop:"20%"}}>Add a New Task</p>}
             
         </>
     )
