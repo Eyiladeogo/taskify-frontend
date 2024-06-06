@@ -1,0 +1,40 @@
+.navbar{
+    background-color: #27251b;
+}
+
+.nav-link{
+    color: white;
+}
+
+.small-logo {
+    height: 6em;
+    padding: 0.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  /* .logo-container{
+    padding-left: 3.5em;
+  } */
+  
+  .small-logo:hover {
+    filter: drop-shadow(0 0 2em #d4ddd8aa);
+  }
+  .small-logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes slogo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .small-logo {
+      animation: slogo-spin infinite 20s linear;
+    }
+  }

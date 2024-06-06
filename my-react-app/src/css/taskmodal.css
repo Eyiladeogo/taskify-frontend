@@ -1,0 +1,8 @@
+.duration-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .duration-inputs input {
+    width: 60px;
+  }

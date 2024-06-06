@@ -1,0 +1,97 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .signin-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signin-form label {
+    font-weight: bold;
+  }
+  
+  .signin-form input[type="text"],
+  .signin-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .signin-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid transparent;;
+    border-radius: 8px;
+    background-color: #1e488f;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signin-form input[type="submit"]:hover {
+    background-color: #164179;
+  }
+
+
+.signin-form h3 {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold; 
+  font-size: 15px;
+}
+
+.register-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-link p {
+  font-size: 14px;
+}
+
+.register-link a {
+  color: #27251b; /* Same as your navbar color */
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .signin-container {
+      padding: 1em;
+  }
+
+  .signin-form {
+      width: 90%;
+      padding: 1.5em;
+  }
+
+  .signin-form label,
+  .signin-form input[type="text"],
+  .signin-form input[type="password"],
+  .signin-form input[type="submit"] {
+      font-size: 1em;
+  }
+
+  .signin-form h3 {
+      font-size: 1em;
+  }
+
+  .register-link p {
+      font-size: 1em;
+  }
+}

@@ -1,0 +1,21 @@
+.analytics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 2em;
+  }
+  
+  .analytics-container h1 {
+    margin-bottom: 2em;
+  }
+  
+  .chart-container {
+    width: 50%;
+    background-color: #e6e7ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  

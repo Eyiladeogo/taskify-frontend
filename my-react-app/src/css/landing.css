@@ -1,0 +1,169 @@
+#root {
+    max-width: 100vw;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: left;
+  }
+  
+  .landing-page-wrapper{
+    background-image: url('/landing-page-bg.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1em;
+  }
+  
+  .logo {
+    height: 15em;
+    padding: 1.5em 1.5em 1.5em 8.8em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  
+  .logo-container{
+    padding-left: 3.5em;
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #04051baa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
+
+
+  /* .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .group {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    width: 100vw;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-sizing: border-box;
+  } */
+  
+  /* .card {
+    padding: 0em;
+  } */
+  
+  
+  .left-button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    background-color: #1e488f;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 10em;
+    margin-left: 3em;
+  } 
+
+  h1 {
+    /* font-size: 2em; */
+    padding-left: 4em;
+    /* text-align: center; */
+  }
+  
+  .left-link{
+    margin-left: 5em;
+    margin-right: 1em;
+    display: inline-block; 
+  }
+  
+  .right-link{
+    margin-left: 1.5em;
+    display: inline-block; 
+  }
+  
+  
+  .right-button{
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    color: white;
+    background-color: #1e488f;
+    cursor: pointer;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 10em; 
+  }
+  
+
+  @media (max-width: 768px) {
+    .landing-page-wrapper {
+      padding: 1em;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .logo {
+      height: 10em;
+      padding: 1.5em 0;
+    }
+  
+    .logo-container {
+      padding-left: 0;
+    }
+  
+    h1 {
+      font-size: 2em;
+      padding-left: 0;
+      text-align: center;
+    }
+
+    .left-link,
+  .right-link {
+    margin: 0.5em;
+  }
+  
+    p {
+      font-size: 1em;
+      width: 90%;
+      text-align: center;
+      padding-left: 0;
+    }
+  
+    
+    .right-button {
+      width: 8em;
+      font-size: 0.9em;
+    }
+
+    .left-button{
+      margin-left: 0;
+      width: 8em;
+      font-size: 0.9em;
+    }
+  }

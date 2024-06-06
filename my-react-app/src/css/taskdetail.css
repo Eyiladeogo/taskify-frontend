@@ -1,0 +1,91 @@
+.tasks-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+/* .task-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  } */
+  
+.task-detail {
+    /* flex: 0 0 20%; Each task detail takes up 48% of the container width */
+    /* flex:auto; */
+    flex: 0 0 calc(50% - 20px); /* Two items per row, adjusting for gap */
+    box-sizing: border-box;
+    border: 1px solid #e6e7ee;
+    padding: 20px;
+    flex: 1;
+    /* margin: 10px 0; */
+    border-radius: 5px;
+    background-color: #e6e7ee;
+  }
+  
+  .task-detail h2 {
+    margin-top: 0;
+  }
+  
+  .task-detail p {
+    margin: 5px 0;
+  }
+  
+
+  /* .task-detail-flex-parent{
+    display: flex; 
+  } */
+
+  .task-detail-flex-group{
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+  }
+
+  .explanatory-text{
+    width: 100%;
+  }
+
+  .explanatory-text p{
+    width: auto;
+    text-align: start;
+  }
+
+  .h2-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .task-switcher {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    
+  }
+  
+  .task-switcher button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button.completed {
+    background-color: #27251b; /* Green */
+    color: #fac45c;
+  }
+  
+  button.pending {
+    background-color: #fac45c; /* Orange */
+    color: #27251b;
+  }
+  
+  .task-switcher button:hover {
+    background-color: #e6e7ee;
+    color: #27251b; /* Navbar color */
+    opacity: 0.8;
+  }
+  
