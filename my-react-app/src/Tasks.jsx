@@ -186,7 +186,7 @@ useEffect(() => {
             {isModalOpen &&(
                     <TaskModal onClose={toggleModal} onAddTask={handleAddTask} task={currentTask}></TaskModal>
             )}
-            {!showCompleted?<button className="add-task" onClick={toggleModal} style={{ transform: "translateX(65%)",bottom: "20px",zIndex: 1000} }>Add Task</button>:null}
+            {!showCompleted?<button className="add-task" onClick={toggleModal} >Add Task</button>:null}
             <div className="task-switcher">
             
                     <button className={showCompleted?'completed':'pending'} onClick={() => setShowCompleted(!showCompleted)}>
@@ -200,7 +200,11 @@ useEffect(() => {
             
                 {tasks.map((task)=><TaskDetail key={task.task_id} task={task} onDelete={handleDeleteTask} onEdit={toggleModal} onComplete={handleCompleteTask} onFetchTask={fetchTasks} setCurrentTask={setCurrentTask} showCompleted={showCompleted}/> )}
             </div>
-            </>: <p style={{fontSize:"3.5em", textAlign:"center",color:"#ff6347", marginTop:"20%"}}>Add a New Task</p>}
+            </>: 
+            <div className="center-placeholder-container">
+                <p className="placeholder-message">Add a New Task</p>
+            </div>
+            }
             
         </>
     )
