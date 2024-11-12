@@ -29,11 +29,11 @@ function Register(){
     async function handleSubmit(e){
         e.preventDefault()
         setFormData({...formData, [e.target.name]:e.target.value})
-        console.log(`FORM DATA :${JSON.stringify(formData)}`)
+        // console.log(`FORM DATA :${JSON.stringify(formData)}`)
 
         try {
             const response = await api.post('/auth/register', formData);
-            console.log(response.data);
+            // console.log(response.data);
             setErrorExists(false)
             localStorage.setItem('token', response.data);
             // Slight delay to ensure token is set before navigation

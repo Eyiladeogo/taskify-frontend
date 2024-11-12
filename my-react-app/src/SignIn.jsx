@@ -27,11 +27,11 @@ function SignIn(){
         e.preventDefault();
         
         setFormData({ ...formData, [e.target.name]: e.target.value });
-        console.log(`FORM DATA :${JSON.stringify(formData)}`)
+        // console.log(`FORM DATA :${JSON.stringify(formData)}`)
         
         try {
           const response = await api.post('/auth/login', formData);
-          console.log(response.data);
+          // console.log(response.data);
           setErrorExists(false)
           localStorage.setItem('token', response.data);
           navigate('/tasks');
